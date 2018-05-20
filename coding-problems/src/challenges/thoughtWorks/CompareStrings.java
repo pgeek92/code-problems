@@ -56,7 +56,7 @@
  *   
  */
 
-package programming;
+package challenges.thoughtWorks;
 
 import java.util.*;
 public class CompareStrings {
@@ -64,18 +64,24 @@ public class CompareStrings {
         
         Scanner s = new Scanner(System.in);
         String[] NQ = s.nextLine().split(" ");
-        String A = s.nextLine();
-        String B = s.nextLine();
+        char[] A = s.nextLine().toCharArray();
+        char[] B = s.nextLine().toCharArray();
+        int AC = 0, BC = 0;
+        int Q = Integer.parseInt(NQ[1]);
         
-        StringBuilder BBuilder = new StringBuilder(B);
-        for(int j = 0; j < Integer.parseInt(NQ[1]); j++){
-            int queryInt = Integer.parseInt(s.nextLine());
-            BBuilder.setCharAt(queryInt-1, '1');
-            if((BBuilder.toString()).compareTo(A) == 0){
-                System.out.println("YES"); 
-            }else{
-                System.out.println("NO");
-            }
+        for(int i = 0; i < A.length; i++) {
+        	if(A[i] == '1') AC++;
+        	if(B[i] == '1') BC++;
+        }
+        
+        while(Q-->0) {// here Q --> 0 means Q>0 and Q-- in Java 8
+        	int index = s.nextInt() - 1;
+        	if(B[index] != '1') BC++;
+        	if(BC < AC) {
+        		System.out.println("NO");
+        	}else {
+        		System.out.println("YES");
+        	}
         }
     }
 }

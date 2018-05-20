@@ -52,55 +52,27 @@
  *   
  */
 
-package programming;
+package challenges.thoughtWorks;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class DigitsInInteger {
-	public static void main(String args[] ) throws Exception {
-	    
-        //BufferedReader
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int T = Integer.parseInt(br.readLine());
-        for(int i = 0; i < T; i++){
-            long N = Long.valueOf(br.readLine());
-            long sum = numberAtNthTerm(N);
-            System.out.println(countNoOfDigits(sum));
-        }
-    }
-    
-    static double logOfBase(long base, long num){
-        return Math.log(num) / Math.log(base);
-    }
-        
-    private static int mfunc(long n) {
-        return (int) Math.floor(logOfBase(3, 2 * n + 1));
-    }
+	public static void main(String args[]) throws Exception {
 
-    private static int b(int j, double m, long n) {
-        return (int) Math.floor((2 * n + 1 - Math.pow(3, m)) / (2 * Math.pow(3, j)));
-    }
-
-    static long numberAtNthTerm(long N){
-        long n = 1;
-        long sum = 0;
-        for (long i = 1; i <= N; i++) {
-            int m = mfunc(n);
-            for (int j = 0; j < m ; j++) {
-                sum += ((1 + b(j, m, n) % 3) * Math.pow(10, j));
-            }
-            n++;
-        } 
-        return sum;
-    }
-        
-    static int countNoOfDigits(long sum){
-        int count = 0;
-        while(sum > 0) {
-    		sum = sum / 10;
-		    count = count + 1; 
-	    }
-	    return count;
-    }
+		// BufferedReader
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		long numOfCases = Long.parseLong(br.readLine());
+		for (int i = 0; i < numOfCases; i++) {
+			long base = 3;
+			long input = Long.parseLong(br.readLine());
+			long numOfDigits = 0;
+			while (input > 0) {
+				input -= base;
+				numOfDigits++;
+				base *= 3;
+			}
+			System.out.println(numOfDigits);
+		}
+	}
 }
