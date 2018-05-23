@@ -1,5 +1,5 @@
 eclipse.preferences.version=1
 encoding//src/algorithms/MOsAlgorithm.java=UTF-8
-encoding//src/programming/DigPow.java=UTF-8
-encoding//src/programming/EANValidator.java=UTF-8
-encoding//src/programming/Line.java=UTF-8
+encoding//src/basicProgramming/DigPow.java=UTF-8
+encoding//src/basicProgramming/EANValidator.java=UTF-8
+encoding//src/basicProgramming/Line.java=UTF-8
