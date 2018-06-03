@@ -45,9 +45,3 @@
  * test cases. Therefore, your code must solve this problem statement.
  * 
  */
-
-package company.samsungR_D;
-
-public class BobAndBeautyOfTheArray {
-
-}
