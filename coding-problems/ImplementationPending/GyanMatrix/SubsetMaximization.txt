@@ -1,0 +1,32 @@
+Subset Maximization
+
+You are given an array A of length N. You need to find the maximum length of the subset of given array such 
+that the frequency all the elements present in the subset are equal.
+
+Input Format
+
+The first line of input contains an integer, denoting the value of N.
+The second line of input contains N space-separated integers, denoting the elements of array A.
+Output Format
+
+Print the maximum length of the subset of the array A in which frequency of all the elements present in that subset is equal.
+
+Constraints
+1 <= N <= 10^5
+1 <= A[i] <= 10^5
+
+Sample Input
+5
+1 2 2 3 3
+Sample Output
+4
+Explanation
+{2 ,2 ,3 ,3} is the required subset with maximum length of 4.
+
+Note: Your code should be able to convert the sample input into the sample output. However, this is not enough 
+to pass the challenge, because the code will be run on multiple test cases. Therefore, your code must solve this problem statement.
+Time Limit: 1.0 sec(s) for each input file
+Memory Limit: 256 MB
+Source Limit: 1024 KB
+Marking Scheme: Marks are awarded if any testcase passes
+Allowed Languages: JavaScript(Rhino), JavaScript(Node.js), Python, Python 3, Java, Java 8

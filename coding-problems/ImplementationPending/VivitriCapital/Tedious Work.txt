@@ -1,0 +1,49 @@
+Tedious Work
+John has a very long and tedious project in his current semester, in which he has to write n documents, numbered from 1 to n. The ith document takes A(i) amount of time to complete. He needs to complete the document in the order of their numbers and he cannot skip any document. In other words, he has to complete 1st document, then 2nd, then 3rd and so on.
+
+He doesn't like to write documents, so he decided to copy documents from the internet. It takes him C(i) amount of time to look for the ith document online. If he searches for the ith document, then search result gives him next k documents starting from the ith document. He can copy these documents to complete the project. After getting k documents (starting from ith document) he can directly jump to (i+j)th document where 1 ≤ j ≤ k-1 by copying all the documents from index i to (i+j-1) from the search result. It is not necessary for John to copy all k documents. As John hates to write these documents, he wants to spend minimum time doing this project. Help him to determine the minimum time it takes to complete the project. Copy-paste does not take any time.
+
+Input Format
+
+In the first line, you are given two integers, n (number of documents) and k (maximum continuous documents that John can copy).
+
+In the second line, you are given an array A with n integers, A(i), where 1 ≤ i ≤ n, represents the time to write the ith document.
+
+In the third line, you are given an array C with n integers, C(i), where 1 ≤ i ≤ n, represents the time it takes to look for ith document online.
+
+Constraints
+
+1 ≤ n ≤ 1000
+
+1 ≤ k ≤ n
+
+1 ≤ A(i) ≤ 105
+
+1 ≤ C(i) ≤ 105
+
+Output Format
+
+Print the single Integer, which is the minimum required time to complete the project.
+
+Sample Input
+7 3
+2 1 9 7 8 4 3
+5 1 6 1 6 1 5
+Sample Output
+5
+Explanation
+    He looks for the 2nd, 4th and 6th document online to get answer 5.
+    
+    [current index = 1] He writes the document ==> cost = 2
+    [current index = 2] He looks online ==> cost = 2 + 1 [He gets the copy of all the documents between 2nd and 4th document (including both 2nd and 4th),but he copies only 2nd and 3rd, and moves to index = 4]
+    [current index = 4] He looks online ==> cost = 3 + 1 [same as above and move to index 6]
+    [current index = 6] He looks online ==> cost = 4 + 1 = 5 [same as above and copies all the remaining document]
+    
+    So minimum cost = 5
+
+Note: Your code should be able to convert the sample input into the sample output. However, this is not enough to pass the challenge, because the code will be run on multiple test cases. Therefore, your code must solve this problem statement.
+Time Limit: 1.0 sec(s) for each input file
+Memory Limit: 256 MB
+Source Limit: 1024 KB
+Marking Scheme: Marks are awarded if any testcase passes
+Allowed Languages: C++, C++14, C#, Go, Java, Java 8, Ruby

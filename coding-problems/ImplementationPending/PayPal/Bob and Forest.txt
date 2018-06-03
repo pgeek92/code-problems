@@ -1,0 +1,57 @@
+Bob and Forest
+You are given a 2D character array denoting forest of length N and breadth M . In the matrix, '.' denotes barren land and ' * ' denotes tree.
+You are given Q questions. In each question, you are given integer K and you have to determine the number of unique squares of side less than or equal to K which contain only trees.
+
+Input
+
+First line : N and M (N denoting number of rows and M denoting number of columns).
+
+Each of the next N lines contains string of M length containing '.' and '*' .
+
+Next line consists of an integer Q, denoting number of questions.
+
+Each of the next Q lines contains a single integer K.
+
+Input Constraints
+1 <= N, M <= 1000
+1 <= Q <= 10^5
+0 <= K <= 10^3
+
+
+
+Output
+
+For each question, print the number of unique squares of side less than or equal to K which contain only trees. 
+Answer for each question should come in a new line.
+
+Sample Input
+4 4
+*..*
+.***
+****
+.***
+3
+1
+2
+3
+Sample Output
+12
+16
+17
+Explanation
+In the given sample , as we can see :-
+
+Squares of side 1 containing only trees :- 12.
+Squares of side 2 containing only trees :- 4.
+Squares of side 2 containing only trees :- 1.
+
+Thus answer for query 1 is 12.
+Answer for query 2 i.e squares of side less than or equal to 2 are 12+4 = 16.
+Answer for query 3 i.e squares of side less than or equal to 3 are 12+4+1=17.
+
+Note: Your code should be able to convert the sample input into the sample output. However, this is not enough to pass the challenge, because the code will be run on multiple test cases. Therefore, your code must solve this problem statement.
+Time Limit: 1.0 sec(s) for each input file
+Memory Limit: 256 MB
+Source Limit: 1024 KB
+Marking Scheme: Marks are awarded if any testcase passes
+Allowed Languages: Java, Java 8

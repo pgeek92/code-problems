@@ -1,0 +1,29 @@
+Partial Digit Sequence
+You are given an array A of length N. The partial digit subsequence of an array A is a subsequence of integers in which each consecutive integers have at least 1 digit in common. You are required to find the length of longest partial digit subsequence from the given array.
+
+Input : 
+
+The first line of input contains N, length of array A.
+The second line of input contains N space-separated integers representing elements of A.
+Output :
+
+Print an integer representing the maximum length of the longest partial digit subsequence of the given array A.
+Constraints :
+1 <= N <= 10^5
+1 <= A[i] <= 10^18
+   
+
+Sample Input
+2
+12 23
+Sample Output
+2
+Explanation
+The longest partial digit subsequence of the given array is [12, 23]. as 12 and 23 contain 2 as the common digit.
+
+Note: Your code should be able to convert the sample input into the sample output. However, this is not enough to pass the challenge, because the code will be run on multiple test cases. Therefore, your code must solve this problem statement.
+Time Limit: 1.0 sec(s) for each input file
+Memory Limit: 256 MB
+Source Limit: 1024 KB
+Marking Scheme: Marks are awarded if any testcase passes
+Allowed Languages: C++, C++14, C#, Go, Java, Java 8, Ruby

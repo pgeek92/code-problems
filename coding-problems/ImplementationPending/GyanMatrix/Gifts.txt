@@ -1,0 +1,48 @@
+Gifts
+
+Alice wants to buy some gifts for Bob. The shopkeeper has N types of gifts. 
+Each type of gift has a distinct price. But shopkeeper has only 2 gifts of each type. 
+Alice has a budget of B units. A gift-set is a collection of gifts Alice bought. 
+Alice wants to count the number of possible non-empty gift-sets she can buy by spending less than or equal to B. 
+Two gift-sets are different if there is at least one gift which is present in one gift-set but not in other. 
+For each type of gift, both the gifts are identical.
+
+
+Input Format
+
+The first line contains two space-separated integers, denoting N and B.
+Next line contains N space-separated integers, where the ith integer denotes the price of the ith type of gift.
+ 
+
+Output Format
+
+Print an integer, denoting the number of non-empty gift-sets she can buy.
+ 
+
+Constraints
+1 <= N <= 14
+1 <= B, P[i] <= 10^9
+​​​​​​​
+Sample Input
+2 9
+8 3
+Sample Output
+3
+Explanation
+Possible gift-sets are:
+
+{gift of type 1} with cost equal to 8 units.
+
+{gift of type 2, gift of type 2} with cost equal to 6 units.
+
+{gift of type 2} with cost equal to 3 units.
+
+Note: Your code should be able to convert the sample input into the sample output. 
+However, this is not enough to pass the challenge, because the code will be run on multiple test cases. 
+Therefore, your code must solve this problem statement.
+
+Time Limit: 1.0 sec(s) for each input file
+Memory Limit: 256 MB
+Source Limit: 1024 KB
+Marking Scheme: Marks are awarded if any testcase passes
+Allowed Languages: JavaScript(Rhino), JavaScript(Node.js), Python, Python 3, Java, Java 8
