@@ -39,7 +39,7 @@
  * Solution : 
  * The idea is to make character count arrays for both the strings and store frequency of each 
  * character. Now iterate the count arrays of both strings and difference in frequency of any 
- * character abs(count1[str1[i]-‘a’] – count2[str2[i]-‘a’]) in both the strings is the number of 
+ * character abs(count1[str1[i]-ï¿½aï¿½] ï¿½ count2[str2[i]-ï¿½aï¿½]) in both the strings is the number of 
  * character to be removed in either string.
  * 
  * Time Complexity : O(N)
@@ -47,7 +47,7 @@
  * 
  */
 
-package codewars;
+package hackerearth;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

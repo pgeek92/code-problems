@@ -46,7 +46,7 @@
  * Python 3, R(RScript), Racket, Ruby, Rust, Scala, Swift, Swift-4.1, Visual Basic
  * 
  */
-package codewars;
+package hackerearth;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
