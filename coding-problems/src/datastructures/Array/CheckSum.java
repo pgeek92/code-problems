@@ -1,4 +1,14 @@
+/**
+ * In this problem, you have to implement the int[] findSum(int[] arr, int n) 
+ * method, which will take a number n, and an array arr as input and returns 
+ * an array of two integers that add up to n in an array. 
+ * You are required to return only one such pair. 
+ * If no such pair found then simply return the array
+ * 
+ */
 package datastructures.Array;
+
+import java.util.LinkedHashSet;
 
 public class CheckSum {
 
@@ -19,6 +29,11 @@ public class CheckSum {
 			System.out.println("Input Array is Empty !");
 		}
 		
+		System.out.println(findSumTwoPointer(null, 9));
+		System.out.println(findSumTwoPointer(new int[] {2}, 9));
+		System.out.println(findSumTwoPointer(new int[] {-3, 0, 1, 2, 7, 8, 10}, 9));
+		
+		System.out.println(findSumHashing(new int[] {-3, 0, 1, 2, 7, 8, 10}, 9));
 	}
 	
 	/**
@@ -40,5 +55,54 @@ public class CheckSum {
 			}
 		}
 		return arr;
+	}
+	
+	/**
+	 * Two Pointer approach (but in this approach, Array should be sorted one)
+	 * or, if given array is unsorted, then we need to sort an array either using
+	 * MergeSort, HeapSort or QuickSort according to minimum time complexity
+	 * 
+	 * @param arr
+	 * @param n
+	 * @return
+	 */
+	public static String findSumTwoPointer(int[] arr, int n) {
+		if(arr == null) {
+			return "()";
+		}
+		
+		int left = 0;
+		int right = arr.length - 1;
+		while(left < right) {
+			int currentSum = arr[left] + arr[right];
+			if(currentSum < n) {
+				left++;
+			} else if (currentSum > n) {
+				right--;
+			} else {
+				return "(" + arr[left] + ", " + arr[right] + ")";
+			}
+		}
+		
+		return "()";
+	}
+	
+	/**
+	 * Best approach is to use Hashing technique, where Time Complexity is O(N), Auxiliary Space is O(N)
+	 * 
+	 * @param arr
+	 * @param n
+	 * @return
+	 */
+	public static String findSumHashing(int[] arr, int n) {
+		LinkedHashSet<Integer> set = new LinkedHashSet<Integer>();
+		for(int i = 0; i < arr.length; i++) {
+			if(set.contains(n - arr[i])) {
+				return "(" + arr[i] + ", " + (n - arr[i]) + ")";
+			}
+			set.add(arr[i]);
+		}
+		
+		return "()";
 	}
 }
