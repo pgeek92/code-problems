@@ -40,7 +40,8 @@ import java.util.Map;
 public class TitleToNumber {
 
 	public static void main(String[] args) {
-
+		System.out.println(titleToNumberL2R("FXSHRXW"));
+		System.out.println(titleToNumberR2L("FXSHRXW"));
 	}
 	
 	/**
