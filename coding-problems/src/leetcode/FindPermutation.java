@@ -29,6 +29,8 @@
  */
 package leetcode;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Stack;
 
 public class FindPermutation {
@@ -50,6 +52,45 @@ public class FindPermutation {
 		for(Integer i : resultantArr) {
 			System.out.print(i + " ");
 		}
+		
+		System.out.println();
+		resultantArr = findPermutationUsingArrayDeque("IIDDIIID");
+		for(Integer i : resultantArr) {
+			System.out.print(i + " ");
+		}
+	}
+	
+	/**
+	 * Approach (Stack Data Structure, but here used 'ArrayDeque' which is faster in single threaded environment)
+	 * 
+	 * Time Complexity : O(N)
+	 * Space Complexity : O(N)
+	 * 
+	 * @param s
+	 * @return
+	 */
+	
+	public static int[] findPermutationUsingArrayDeque(String s) {
+		int[] resultantArr = new int[s.length() + 1];
+		Deque<Integer> arrayDeque = new ArrayDeque<Integer>();
+		int j = 0;
+		for(int i = 1; i <= s.length(); i++) {
+			if(s.charAt(i-1) == 'I') {
+				arrayDeque.push(i);
+				while(!arrayDeque.isEmpty()) {
+					resultantArr[j++] = arrayDeque.pop();
+				}
+			} else {
+				arrayDeque.push(i);
+			}
+		}
+		
+		arrayDeque.push(s.length() + 1);
+		while(!arrayDeque.isEmpty()) {
+			resultantArr[j++] = arrayDeque.pop();
+		}
+		
+		return resultantArr;
 	}
 	
 	/**
