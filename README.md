@@ -46,7 +46,7 @@ This is my repo full of code problems that I'm currently practicing prior to or 
 |   [Hackerrank](https://www.hackerrank.com/)                              |            [1](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/hackerrank)        		 |
 |   [Leetcode](https://leetcode.com/)                                      |            [22](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/leetcode)         		 |     
 |   [Leetcode Top Interview Questions](https://leetcode.com/)              |            [3](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/leetcode/topIntQuests)      |
-|   [Namaster DSA](https://namastedev.com/learn/namaste-dsa)               |            [5](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/namasteDSA)                 |
+|   [Namaste DSA](https://namastedev.com/learn/namaste-dsa)                |            [6](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/namasteDSA)                 |
 
 ### Company Hiring Challenges
 
