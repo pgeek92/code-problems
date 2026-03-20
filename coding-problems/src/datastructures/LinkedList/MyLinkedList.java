@@ -10,26 +10,53 @@ class Node {
 	}
 }
 
-public class MyLinkedList {
-
-	public static void main(String[] args) {
-		Node head = new Node(10);
-		head.next = new Node(20);
-		head.next.next = new Node(30);
-		head.next.next.next = new Node(40);
-		
-		printLinkedList(head);
-		
-		head = addAtHead(head, 5);
-		
-		printLinkedList(head);
-		
-		head = addAtTail(head, 50);
-		
-		printLinkedList(head);
+class MyLinkedList {
+	int size;
+	Node head;
+	
+	public MyLinkedList() {
+		size = 0;
+		head = new Node(0);
 	}
 	
-	public static void printLinkedList(Node head) {
+	public int get(int index) {
+		if (index < 0 || index >= size) {
+			return -1;
+		}
+		
+		Node curr = head;
+		for(int i = 0; i < index + 1; i++) {
+			curr = curr.next;
+		}
+		return curr.data;
+	}
+	
+	public void addAtHead(int val) {
+		addAtIndex(0, val);
+	}
+	
+	
+	public void addAtTail(int val) {
+		addAtIndex(size, val);
+	}
+	
+	
+	public void addAtIndex(int index, int val) {
+		if (index > size) return;
+		if (index < 0) index = 0;
+		++size;
+		
+		Node pred = head;
+		for(int i = 0; i < index; i++) {
+			pred = pred.next;
+		}
+		
+		Node toAdd = new Node(val);
+		toAdd.next = pred.next;
+		pred.next = toAdd;
+	}
+	
+	public void printLinkedList() {
 		Node current = head;
 		
 		while(current != null) {
@@ -42,25 +69,16 @@ public class MyLinkedList {
         System.out.println();
 	}
 	
-	public static Node addAtHead(Node head, int val) {
-		Node newNode = new Node(val);
-		newNode.next = head;
-		return newNode;
-	}
-	
-	public static Node addAtTail(Node head, int val) {
-		Node newNode = new Node(val);
-		if(head == null) {
-			return newNode;
-		}
+	public static void main(String[] args) {
+		MyLinkedList obj = new MyLinkedList();
+		obj.addAtIndex(0, 1);
+		obj.addAtIndex(1, 2);
+		obj.addAtIndex(2, 3);
+		obj.addAtIndex(3, 4);
 		
-		Node last = head;
+		int value = obj.get(0);
+		System.out.println(value);
 		
-		while(last.next != null) {
-			last = last.next;
-		}
-		
-		last.next = newNode;
-		return head;
+		obj.printLinkedList();
 	}
 }
