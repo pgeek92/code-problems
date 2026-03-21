@@ -7,22 +7,24 @@ This is my repo full of code problems that I'm currently practicing prior to or 
 
 ### Algorithms
 
-| S.No.  |                                                                                           Solution                   									      																										  							   |
-|:------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|   1    | [MO's Algorithm](https://github.com/pgeek92/code-problems/blob/master/coding-problems/src/algorithms/MOsAlgorithm.java)     							      																										    							   |
-|   2    | [Z Algorithm](https://github.com/pgeek92/code-problems/blob/master/coding-problems/src/algorithms/ZAlgorithm.java)										  																										                                   |
-|   3    | [Reversal Algorithm](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/algorithms/ReversalAlgorithm.java)				      		  																										                                   |
-|   4    | [Juggling Algorithm](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/algorithms/JugglingAlgorithm.java)							  																										                                   |
-|   5    | [Euclidean Algorithm](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/algorithms/EuclideanAlgorithm.java)						  																										                                   |
-|   6    | [One Pass Hash Table](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/leetcode/TwoSum.java)						  				  																										                                   |
-|   7    | [Two Pointer Technique - 1](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/leetcode/RemoveDuplicatesFromSortedArray.java), [Two Pointer Technique - 2](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/leetcode/RemoveElement.java)			   |
-|   8    | [Boyer Moore Vooting Algorithm](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/leetcode/MajorityElement.java)			          																										                                   |
-|   9    | [Naive Pattern Search Algorithm](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/algorithms/NaivePatternMatchingAlgorithm.java)			          																										                   |
-|   10   | [Optimized Naive Pattern Search Algorithm](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/algorithms/OptimizedNaivePatternMatchingAlgorithm.java)			          																									   |
-|   11   | [Rabin Karp Pattern Search Algorithm](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/algorithms/RabinKarpAlgorithm.java)			          																										                       |
-|   12   | [Counting Sort Algorithm](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/algorithms/CountingSort.java)			          																										                       					   |
-|   13   | [Floyd Cycle-Finding Algorithm](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/leetcode/HappyNumber.java)			          																										                       				   |
-|   14   | [Brian Kernighan’s Algorithm](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/datastructures/BITManipulation/CountSetBits.java)			          																										                   |
+| S.No.  |                                                                                           Solution                   									      				 |             											      Problem														     |
+|:------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------:|
+|   1    | [MO's Algorithm](https://github.com/pgeek92/code-problems/blob/master/coding-problems/src/algorithms/MOsAlgorithm.java)     							      					 |                                 																								 |
+|   2    | [Z Algorithm](https://github.com/pgeek92/code-problems/blob/master/coding-problems/src/algorithms/ZAlgorithm.java)										  					 |                                 																								 |
+|   3    | [Reversal Algorithm](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/algorithms/ReversalAlgorithm.java)				      		  					 |                                 																								 |
+|   4    | [Juggling Algorithm](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/algorithms/JugglingAlgorithm.java)							  					 |                                 																								 |
+|   5    | [Euclidean Algorithm](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/algorithms/EuclideanAlgorithm.java)						  					 |                                 																								 |
+|   6    | [One Pass Hash Table](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/leetcode/TwoSum.java)						  				  					 |                                 																								 |
+|   7    | [Two Pointer Technique]     	                                                                                                                                                 | [1](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/leetcode/RemoveDuplicatesFromSortedArray.java), 
+                                                                                                                                                                                           [2](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/leetcode/RemoveElement.java), 
+																																														   [3](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/datastructures/LinkedList/MiddleNode.java)                                                                                                                              |
+|   8    | [Boyer Moore Vooting Algorithm](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/leetcode/MajorityElement.java)			          					 |                                 																								 |
+|   9    | [Naive Pattern Search Algorithm](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/algorithms/NaivePatternMatchingAlgorithm.java)			             |	 																							                                 |
+|   10   | [Optimized Naive Pattern Search Algorithm](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/algorithms/OptimizedNaivePatternMatchingAlgorithm.java)   |																								                                 |
+|   11   | [Rabin Karp Pattern Search Algorithm](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/algorithms/RabinKarpAlgorithm.java)			                 |																								                                 |
+|   12   | [Counting Sort Algorithm](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/algorithms/CountingSort.java)			          							 | 																								                                 |
+|   13   | [Floyd Cycle-Finding Algorithm](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/leetcode/HappyNumber.java)			          						 |																								                                 |
+|   14   | [Brian Kernighan’s Algorithm](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/datastructures/BITManipulation/CountSetBits.java)			             |																								                                 |
 
 ### Data Structures
 
@@ -36,7 +38,7 @@ This is my repo full of code problems that I'm currently practicing prior to or 
 |  [Hashing](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/datastructures/Hashing)					  |            6              |
 |  [Recursion](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/datastructures/Recursion)                 |            5              |
 |  [Binary Heap](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/datastructures/BinaryHeap)              |            4              |
-|  [Linked List](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/datastructures/LinkedList)              |            1              |
+|  [Linked List](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/datastructures/LinkedList)              |            2              |
 
 ### Different Coding Sites
 
