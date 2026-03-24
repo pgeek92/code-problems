@@ -23,6 +23,7 @@ This is my repo full of code problems that I'm currently practicing prior to or 
 |   12   | [Counting Sort Algorithm](https://github.com/pgeek92/code-problems/blob/master/coding-problems/src/algorithms/CountingSort.java)			          							 | 																								                                 |
 |   13   | [Floyd Cycle-Finding Algorithm]			          						                                                                                                     | [1](https://github.com/pgeek92/code-problems/blob/master/coding-problems/src/leetcode/HappyNumber.java), [2](https://github.com/pgeek92/code-problems/blob/master/coding-problems/src/datastructures/LinkedList/CycleInLinkedList.java)																								                                                                                                 |
 |   14   | [Brian Kernighan’s Algorithm](https://github.com/pgeek92/code-problems/blob/master/coding-problems/src/datastructures/BITManipulation/CountSetBits.java)			             |																								                                 |
+|   15   | [In-Place Algorithm](https://github.com/pgeek92/code-problems/blob/master/coding-problems/src/datastructures/LinkedList/PalindromeLinkedList.java)                            |                                                                                                                               |
 
 ### Data Structures
 
@@ -36,7 +37,7 @@ This is my repo full of code problems that I'm currently practicing prior to or 
 |  [Hashing](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/datastructures/Hashing)					  |            6              |
 |  [Recursion](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/datastructures/Recursion)                 |            5              |
 |  [Binary Heap](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/datastructures/BinaryHeap)              |            4              |
-|  [Linked List](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/datastructures/LinkedList)              |            4              |
+|  [Linked List](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/datastructures/LinkedList)              |            5              |
 
 ### Different Coding Sites
 
