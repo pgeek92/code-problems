@@ -39,7 +39,7 @@ This is my repo full of code problems that I'm currently practicing prior to or 
 |  [Hashing](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/datastructures/Hashing)					  |            6              |
 |  [Recursion](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/datastructures/Recursion)                 |            5              |
 |  [Binary Heap](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/datastructures/BinaryHeap)              |            4              |
-|  [Linked List](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/datastructures/LinkedList)              |            13             |
+|  [Linked List](https://github.com/pgeek92/code-problems/tree/master/coding-problems/src/datastructures/LinkedList)              |            14             |
 
 ### Different Coding Sites
 
